@@ -61,3 +61,54 @@
         <h1>Your Housing Project</h1>
         <nav>
             <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#floorplans">Floor Plans</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#resident-login">Resident Login</a></li>
+                <li><a href="#applicant-login">Applicant Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1>Welcome to Your Housing Project</h1>
+    </div>
+    <div class="content" id="home">
+        <h2>Home</h2>
+        <p>Welcome to the Home section of your website.</p>
+    </div>
+    <div class="content" id="floorplans">
+        <h2>Floor Plans</h2>
+        <p>Explore our 1-, 2-, and 3-bedroom floor plans.</p>
+    </div>
+    <div class="content" id="amenities">
+        <h2>Amenities</h2>
+        <p>Discover the amenities we offer, including a fitness center, swimming pool, and parking.</p>
+    </div>
+    <div class="content" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+    <div class="content" id="resident-login">
+        <h2>Resident Login</h2>
+        <p>Login for current residents.</p>
+    </div>
+    <div class="content" id="applicant-login">
+        <h2>Applicant Login</h2>
+        <p>Login for new applicants.</p>
+    </div>
+</body>
+</html>
