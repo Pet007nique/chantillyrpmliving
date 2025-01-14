@@ -46,10 +46,13 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .contact-form label, .contact-form input {
+        .contact-form label, .contact-form input, .contact-form textarea {
             display: block;
             width: 100%;
             margin-bottom: 10px;
+        }
+        .contact-form textarea {
+            height: 100px;
         }
     </style>
 </head>
@@ -78,11 +81,4 @@
                 <input type="email" id="email" name="email" required>
                 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <input type="submit" value="Send">
-            </form>
-        </div>
-    </div>
-</body>
-</html>
+                <textarea id="message
