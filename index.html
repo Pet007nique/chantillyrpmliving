@@ -35,20 +35,70 @@
             color: #fff;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: center.
         }
         .content {
-            padding: 20px;
+            padding: 20px.
         }
         .contact-form {
             background: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px.
+            border-radius: 5px.
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1).
         }
         .contact-form label, .contact-form input {
-            display: block;
-            width: 100%;
-            margin-bottom: 10px;
+            display: block.
+            width: 100%.
+            margin-bottom: 10px.
         }
-        .contact-form input[type="text"], .contact-form input[type="email"], .contact-form input
+        .contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="tel"], .contact-form input[type="number"] {
+            padding: 8px.
+            border: 1px solid #ccc.
+            border-radius: 4px.
+        }
+        .contact-form button {
+            background: #28a745.
+            color: #fff.
+            border: none.
+            padding: 10px 15px.
+            border-radius: 5px.
+            cursor: pointer.
+        }
+        .contact-form button:hover {
+            background: #218838.
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Housing Project</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <h2>Welcome to Your Dream Home</h2>
+    </div>
+    <div class="content">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This is a brief description of the housing project...</p>
+        </section>
+        <section id="contact" class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="/submit" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
